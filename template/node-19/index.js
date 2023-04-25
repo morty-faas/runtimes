@@ -5,6 +5,9 @@ const { handler } = require("./function/handler");
 
 const app = express();
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 app.all("/*", async (req, res) => {
   return await handler(req, res);
 });
