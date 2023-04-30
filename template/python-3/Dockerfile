@@ -1,4 +1,4 @@
-FROM --platform=${TARGETPLATFORM:-linux/amd64} ghcr.io/morty-faas/alpha:v1.0.0 as get-alpha
+FROM --platform=${TARGETPLATFORM:-linux/amd64} ghcr.io/morty-faas/alpha:v1.0.1 as get-alpha
 FROM --platform=${TARGETPLATFORM:-linux/amd64} python:3-alpine
 
 
