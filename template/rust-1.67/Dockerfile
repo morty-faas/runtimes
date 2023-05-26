@@ -1,4 +1,4 @@
-FROM --platform=${TARGETPLATFORM:-linux/amd64} ghcr.io/morty-faas/alpha:v1.0.1 as get-alpha
+FROM --platform=${TARGETPLATFORM:-linux/amd64} ghcr.io/morty-faas/alpha:v1.0.2 as get-alpha
 FROM --platform=${TARGETPLATFORM:-linux/amd64} rust:1.67-alpine as build
 
 ARG TARGETPLATFORM
